@@ -1,0 +1,68 @@
+.footer{
+    background-color:black;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    z-index: 0%;
+}
+  
+
+#footerSocialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dcdfe7;
+    padding: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+} 
+ 
+
+#footermediaIcon{
+    margin-right: 10px;
+}
+
+#footerPayload{
+    display: flex;
+    justify-content: space-around;
+    min-height: 300px;
+    padding-top: 25px;
+}
+ 
+#ToemeSentence{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #footerSocialMedia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(185, 185, 205);
+    }  
+    #footerSocialMedia > div{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 5px;
+    } 
+    
+}
+
+@media screen and (max-width: 700px) {
+     
+    #footerPayload{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+ 
+}
+ 

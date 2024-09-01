@@ -1,0 +1,40 @@
+/* NotFoundPage.css */
+
+.not-found-container {
+    text-align: center;
+  }
+  
+  .balls-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    animation: swing 2s infinite alternate ease-in-out;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .light-blue {
+    background-color: lightblue;
+  }
+  .light-red{
+    background-color: crimson;
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  

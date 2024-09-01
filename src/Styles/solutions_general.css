@@ -1,0 +1,133 @@
+.solution-Items-container, #techarea {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-gap: 10px;
+}
+  
+.solution-item {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.solution-item-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0;
+    border-radius: 50%;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease;
+}
+
+.solution-item-icon:hover {
+    transform: scale(1.1);
+}
+
+.solution-item-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solution-item-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+#desktopSolutionImage{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 10px;
+}
+
+.image-container {
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;  
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .image-container:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+#modalContactbtn{
+    width: 300px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+.consultation-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+   
+  
+.consultation-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .consultation-info button {
+    margin-top: 10px;
+  }
+  
+
+@media  (max-width: 600px) {
+    .solution-Items-container, #techarea, #desktopSolutionImage {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    #modalContactbtn{
+        width: 100%;
+    }
+}
+
+@media  (min-width: 600px) and (max-width: 769px) {
+    .solution-Items-container, #techarea,#desktopSolutionImage {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+
+@media  (min-width: 770px) and (max-width: 1025px) {
+    .solution-Items-container,#techarea {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}

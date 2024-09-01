@@ -1,0 +1,32 @@
+  
+#desktopAppcontain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
+  
+ 
+@media  (max-width: 600px) {
+    #desktopAppcontain{
+        display: block;
+    }
+}
+
+@media  (min-width: 600px) and (max-width: 768px) {
+    #desktopAppcontain{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        grid-gap: 10px;
+    }
+}
+
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    #desktopAppcontain{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+        grid-gap: 10px;
+    }
+}
+ 
