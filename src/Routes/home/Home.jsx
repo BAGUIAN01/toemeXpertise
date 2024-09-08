@@ -128,7 +128,7 @@ function Home() {
             ease: "easeInOut",
           }}
         >
-          <TextRevealCardPreview></TextRevealCardPreview>
+          <TextRevealCardPreview/>
         </motion.div>
       </Container>
 
