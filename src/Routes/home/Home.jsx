@@ -35,6 +35,7 @@ import {
   CardDescription,
 } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
+import ProjectMobileComponent from "./component/project-mobile-component";
 
 function Home() {
   const [isDesktop, setisDesktop] = useMediaQuery(
@@ -42,7 +43,7 @@ function Home() {
     "(display-mode: browser)"
   );
   return (
-    <div className="bg-[#0E0C15] ">
+    <div className="bg-[#0E0C15] overflow-x-hidden ">
       <Container fluid>
         <Navbar />
       </Container>
@@ -74,38 +75,7 @@ function Home() {
           {isDesktop ? (
             <StickyScrollLayout />
           ) : (
-            <div className="w-[80%] ml-[10%] text-left text-white">
-              <Carousel>
-                <CarouselContent className="flex flex-row">
-                  {Project_items.map((item, index) => (
-                    <CarouselItem key={index}>
-                      <div key={index}>
-                        <Card>
-                          <CardHeader>
-                            <CardTitle>{item.name}</CardTitle>
-                          </CardHeader>
-                          <CardContent>
-                            <img
-                              src={process.env.PUBLIC_URL + item.cover}
-                              alt=""
-                            />
-                            <p>{item.description}</p>
-                          </CardContent>
-                          <CardFooter className="flex items-center">
-                            <Button variant="outline" className="ml-[40%]">
-                              En savoir plus
-                            </Button>
-                          </CardFooter>
-                        </Card>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
-            </div>
+            <ProjectMobileComponent Project_items={Project_items} />
           )}
         </motion.div>
 

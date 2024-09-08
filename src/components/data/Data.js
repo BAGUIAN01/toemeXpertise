@@ -372,7 +372,7 @@ export const Project_items = [
   },
   {
     id: 2,
-    name: "plateforme web pour faire de la datascience",
+    name: "Plateforme web pour faire de la datascience",
     entreprise: "ToemeXpertise",
     description: "Vous cherchez à traiter les données de votre entreprise sans être familier avec les langages de traitement de données ? Nous avons conçu une plateforme qui vous permet de traiter vos données facilement et efficacement.",
     cover: "/images/project/streamlit.png",
@@ -385,13 +385,6 @@ export const Project_items = [
     cover: "/images/project/4.png",
   },
 
-  // {
-  //   id: 4,
-  //   name: "Plateforme web pour la gestion de la consommation énergetique d'un bâtiments",
-  //   entreprise: "ToemeXpertise",
-  //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  //   cover: "/images/project/dashbord.png",
-  // },
 ];
 
 
