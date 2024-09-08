@@ -89,7 +89,7 @@ function Home() {
           }}
           className="text-white"
         >
-          <Heading title="Proposition de valeur" subtitle="" />
+          <Heading title="L'Excellence Technologique à Votre Service" subtitle="" />
           <ValueProposalTabs />
         </motion.div>
 
