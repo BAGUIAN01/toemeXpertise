@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const ProjectMobileComponent = ({ Project_items }) => {
     return (
-      <div className="w-full px-4 sm:w-[90%] sm:mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%] text-left text-white bg-black py-8">
+      <div className="w-full px-4 sm:w-[90%] sm:mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%] text-left text-white py-8">
         <Carousel className="w-full">
           <CarouselContent className="-ml-1">
             {Project_items.map((item, index) => (
