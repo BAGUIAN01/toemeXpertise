@@ -29,7 +29,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
 
   return (
     <motion.div
-      className="h-[40rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 bg-gradient-to-br from-gray-900 to-black"
+      className="h-[40rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 bg-gradient-to-br"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
