@@ -6,13 +6,13 @@ const people = [
   {
     id: 1,
     name: "BAGUIAN Harouna",
-    designation: "Software Engineer",
+    designation: "Chef de projet IA/Data",
     image: "/images/team/BAGUIAN.jpg",
   },
   {
     id: 2,
     name: "OUEDRAOGO Ousseni",
-    designation: "Software Engineer",
+    designation: "Doctorant IA",
     image: "/images/team/ousseni.JPG",
   },
   {

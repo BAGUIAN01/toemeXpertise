@@ -18,23 +18,8 @@ import Services from "./component/Services";
 import Assets from "./component/Assets";
 import MissionValue from "./component/missionValue";
 import { useMediaQuery } from "@chakra-ui/react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "../../components/ui/carousel";
 import { Project_items } from "../../components/data/Data";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "../../components/ui/card";
-import { Button } from "../../components/ui/button";
+
 import ProjectMobileComponent from "./component/project-mobile-component";
 
 function Home() {
